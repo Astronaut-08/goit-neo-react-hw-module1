@@ -1,0 +1,84 @@
+/* Контейнер всієї картки */
+.profile {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #fefefe;
+  border: 2px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+/* Верхня частина з інформацією */
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Аватарка */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  background-color: #2f2e2e;
+}
+
+/* Текстова інформація */
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.tag, .location {
+  font-size: 18px;
+  color: #888;
+  margin: 0 0 8px 0;
+}
+
+.location {
+  margin-bottom: 0;
+}
+
+/* Блок статистики (список) */
+.stats {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #dfdfdf;
+  border-top: 2px solid #2a2a2a;
+}
+
+/* Окремий елемент статистики */
+.stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  padding: 20px 0;
+}
+
+/* Бордери між елементами статистики (крім останнього) */
+.stats li:not(:last-child) {
+  border-right: 2px solid #2a2a2a;
+}
+
+/* Текст всередині статистики */
+.label {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.quantity {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
